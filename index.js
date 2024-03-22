@@ -15,7 +15,6 @@ app.use(cors())
 
 
 
-
 // the root path to our server
 app.get('/', (req, res)=>{
     // console.log(req)
@@ -23,6 +22,8 @@ app.get('/', (req, res)=>{
     
     })
 
+
+// sending all request to route handler    
 app.use('/jobs', jobRoute )
  
     
